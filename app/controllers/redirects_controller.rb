@@ -6,6 +6,6 @@ class RedirectsController < ApplicationController
   private
 
     def amazon_alexa_service
-      "https://layla.amazon.com/api/skill/link/M2NGWZBRT92QXO?" + params.to_query
+      "https://layla.amazon.com/api/skill/link/M2NGWZBRT92QXO?" + params.to_hash.to_query
     end
 end
